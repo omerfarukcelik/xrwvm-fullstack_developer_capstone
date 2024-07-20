@@ -1,12 +1,12 @@
 from django.db import models
 from django.utils.timezone import now
 from django.core.validators import MaxValueValidator, MinValueValidator
-       
+
 # - Name
 # - Description
 # - Any other fields you would like to include in car make model
 # - __str__ method to print a car make object
-class CarMake(models.Model):
+class CarMake(models.Model): 
     name = models.CharField(max_length=100)
     description = models.TextField()
     # Other fields as needed
